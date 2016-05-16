@@ -3,6 +3,7 @@ import Image from './ImageComponent';
 import cats from '../data/cats';
 
 class HomepageComponent extends Component {
+
   render() {
     return (
       <section>

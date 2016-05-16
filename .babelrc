@@ -2,6 +2,7 @@
   "presets": ["es2015-node4"],
   "plugins": [
     "transform-react-jsx",
+    "transform-class-properties",
     "transform-async-to-generator"
   ]
 }
