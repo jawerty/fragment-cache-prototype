@@ -1,16 +1,15 @@
-import BigComponent from '../lib/big-component'
+import RenderComponent from '../lib/RenderComponent'
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Image from './ImageComponent';
 import cats from '../data/cats';
 
-BigComponent()
-class HomepageComponent extends BigComponent {
-  view() {
+class HomepageComponent extends Component {
+  render() {
     const jsx = (
       <section>
         <h1>Hello World</h1>
-        {cats.map(({image, description}) => <Image src={image} desc={description} />)}
+        {cats.map(({image, description}) => new RenderComponent("div", Image, {src: image, desc: description}))}
       </section>
     );
 
